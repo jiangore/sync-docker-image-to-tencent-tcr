@@ -39,7 +39,7 @@ jobs:
     - name: Use Skopeo Tools Sync Image to Docker Hub
       run: |
         #!/usr/bin/env bash
-        docker info
+        echo $PWD
         docker pull mpromonet/webrtc-streamer:latest
         docker tag mpromonet/webrtc-streamer:latest ccr.ccs.tencentyun.com/jiangore/webrtc-streamer:latest
-        docker push ccr.ccs.tencentyun.com/jiangore/mpromonet/webrtc-streamer:latest
+        docker push ccr.ccs.tencentyun.com/jiangore/webrtc-streamer:latest
